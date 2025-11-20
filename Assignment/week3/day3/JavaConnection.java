@@ -1,6 +1,6 @@
 package assignment.week3.day3;
 
-public class JavaConnection extends MySqlConnection {
+public class JavaConnection implements DatabseConnection {
 
 	@Override
 	public void connect() {
@@ -25,9 +25,9 @@ public class JavaConnection extends MySqlConnection {
         JavaConnection db = new JavaConnection();
         db.connect();
         db.disconnect();
-        db.executeQuery();
         db.executeUpdate();
         
 	}        
 
 }
+
